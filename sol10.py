@@ -78,7 +78,7 @@ def f2(input):
         print (''.join(S.crt_image[i,:]))
 
 def main():
-    with open("input_day10.txt", "r") as input:
+    with open("data/input_day10.txt", "r") as input:
         input = input.read().splitlines()
 
     f1(input)

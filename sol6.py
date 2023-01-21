@@ -1,7 +1,7 @@
 from copy import deepcopy
 
 ### input ###
-with open("input_day6.txt", "r") as input:
+with open("data/input_day6.txt", "r") as input:
 	input = input.read()
 
 # input = 'mjqjpqmgbljsphdztnvjfqwrcgsmlb'

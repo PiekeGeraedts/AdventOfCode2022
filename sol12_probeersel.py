@@ -35,7 +35,7 @@ def solve(maze, pos, exit, current_path = None):
 
 def main():
     # this solution works for small mazes/graphs (test_input_day12.txt), not for the large graphs.
-    with open("test_input_day12.txt", "r") as input:
+    with open("data/test_input_day12.txt", "r") as input:
         input = input.read()
     global shortest_path_length
     shortest_path_length = 999

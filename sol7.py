@@ -74,7 +74,7 @@ def size_smallest_folder_constrained(directories):
                 
 
 def main():
-    with open("input_day7.txt", "r") as input:
+    with open("data/input_day7.txt", "r") as input:
         input = input.read().split('$')[1:]
     current_directory = '/'
     home = Node()

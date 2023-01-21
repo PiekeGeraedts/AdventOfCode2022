@@ -1,3 +1,8 @@
+'''
+Used the itertools function permutation to try all strategies, and map with lambda to apply the score function on the input.
+permutations returns and itertools.permutaions object, which seems to be some sort of iterator object (next works on it). 
+'''
+
 from itertools import permutations
 from copy import deepcopy
 
@@ -27,6 +32,7 @@ def single_round(p1, p2, strategy):
             score+=6
     return score
 
+
 def single_round2(p1, p2):
     score = 0
     if p1 == 'A':
@@ -53,10 +59,8 @@ def single_round2(p1, p2):
     return score
         
 ### input ###
-with open("input_day2.txt", "r") as input:
+with open("data/input_day2.txt", "r") as input:
 	input_lst = input.read().splitlines()
-
-# input_lst = ['A Y', 'B X', 'C Z']
 
 ### puzzle 1 ###
 max_score = 0

@@ -72,7 +72,7 @@ def max_visibility(tree_map):
 
 
 def main():
-    with open("input_day8.txt", "r") as input:
+    with open("data/input_day8.txt", "r") as input:
         input = input.read().splitlines()
     input = [[c for c in input[i]] for i in range(len(input))]
     in_arr = np.array(input)

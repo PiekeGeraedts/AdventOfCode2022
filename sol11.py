@@ -77,7 +77,7 @@ def f2(input):
 
 
 def main():
-    with open("test_input_day11.txt", "r") as input:
+    with open("data/test_input_day11.txt", "r") as input:
         input = input.read().splitlines()
 
     f1(input)

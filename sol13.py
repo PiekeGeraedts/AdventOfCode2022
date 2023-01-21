@@ -91,7 +91,7 @@ def f2(data):
 
 
 def main():
-    with open("input_day13.txt", "r") as input:
+    with open("data/input_day13.txt", "r") as input:
         data = input.read()
         
     # f1(data.split("\n\n"))

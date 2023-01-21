@@ -1,10 +1,17 @@
+'''
+I used recursion (wanted to try it again) to solve the puzzle. I learnt how the next() method for iterators work.
+The next function returns the next item in an iterator object, e.g., next(i for i in [1,2,3]) returns 1.
+'''
+
 def f1(lst, max_calories):
 	# stop condition
 	if len(lst) == 0:
 		return [], max_calories
 	# find elf's items
+	print (lst)
 	elf_items_idx = next((idx for idx, item in enumerate(lst) if item == ''), 1)
 	elf_items = [int(i) for i in lst[:elf_items_idx]]
+	print (elf_items)
 	# remaining items
 	lst = lst[elf_items_idx+1:]
 	# update max
@@ -23,7 +30,7 @@ def f2(lst, sum_lst):
 	return f2(lst, sum_lst)
 
 
-with open("input_day1.txt", "r") as input:
+with open("data/input_day1.txt", "r") as input:
 	input_lst = input.read().splitlines()
 
 # Level 1 solution

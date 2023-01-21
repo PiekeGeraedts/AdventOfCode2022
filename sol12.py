@@ -83,7 +83,7 @@ def f2(data, src, target):
 
 
 def main():
-    with open("input_day12.txt", "r") as input:
+    with open("data/input_day12.txt", "r") as input:
         data = input.read().splitlines()
         
         # find source and target node

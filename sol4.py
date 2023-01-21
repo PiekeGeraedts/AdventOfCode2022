@@ -1,3 +1,7 @@
+'''
+Used sets to solve this puzzle, nothing special.
+'''
+
 def f1(asgnmt1, asgnmt2):
     n1, n2 = asgnmt1.split('-')
     set1 = set(range(int(n1), int(n2)+1))
@@ -21,7 +25,7 @@ def f2(asgnmt1, asgnmt2):
         return 1
 
 ### input ###
-with open("input_day4.txt", "r") as input:
+with open("data/input_day4.txt", "r") as input:
 	input_lst = input.read().splitlines()
 
 # input_lst = ['2-4,6-8' 

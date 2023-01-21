@@ -1,3 +1,9 @@
+'''
+Used sets to solve this puzzle.
+New functions used: ord, 
+ord - returns an integer representing the unicode character, it is the inverse of chr
+'''
+
 def f1(rucksack):
     middle = int(len(rucksack)/2)
     compartment1 = set(rucksack[:middle])
@@ -28,7 +34,7 @@ def f2(lst, sum_priorities):
     return f2(lst, sum_priorities)
 
 ### input ###
-with open("input_day3.txt", "r") as input:
+with open("data/input_day3.txt", "r") as input:
 	input_lst = input.read().splitlines()
 
 # input_lst = ['vJrwpWtwJgWrhcsFMMfFFhFp'

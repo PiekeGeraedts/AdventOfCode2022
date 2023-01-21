@@ -40,7 +40,7 @@ def parse_instruction2(instruction):
         d[to_stack].append(item)
 
 ### input ###
-with open("input_day5.txt", "r") as input:
+with open("data/input_day5.txt", "r") as input:
 	input_lst = input.read().splitlines()
 
 ### puzzle 1 ###
