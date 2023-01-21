@@ -1,3 +1,9 @@
+'''
+Using custom class Node to indicate size of a folder, its parent folder, and whether the folder has been checked out (ls).
+The has_ls is to ensure that the logic for counting folder size does not count the folder size more than once.
+Caveats - I did not use full path name in my dict of folders. 
+        - '..' is different for the root folder
+'''
 class Node:
     def __init__(self, size=0, prev=None, has_ls=False):
         self.size = size
@@ -66,7 +72,7 @@ def size_small_folders(directories):
 def size_smallest_folder_constrained(directories):
     required_size = directories['/'].size - 40_000_000
     min_size = 10**9
-    for directory, node in directories.items():
+    for _, node in directories.items():
         if node.size > required_size:
             if min_size > node.size:
                 min_size = node.size
